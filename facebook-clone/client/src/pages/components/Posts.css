@@ -1,0 +1,165 @@
+.posts {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(128, 128, 128);
+    position: relative;
+
+
+}
+
+.post__info {
+    display: flex;
+    align-items: center;
+}
+
+.post__info__text>h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.post__info__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__header>button {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: all 300ms ease;
+}
+
+
+.post__header>button:hover {
+    background-color: #9BE8D8;
+}
+
+.post__header>button:active {
+    background-color: gray;
+}
+
+.post__body {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.post__body__img {
+    width: 100%;
+
+
+}
+
+.post__body__img>img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-position: center;
+    transition: all 300ms ease;
+
+}
+
+.post__body__img>img:hover {
+    -webkit-filter: brightness(60%);
+}
+
+.post__likes {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.post__actions {
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #9BE8D8;
+    padding-top: 5px;
+}
+
+.post__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+    transition: all 300ms ease;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 5px;
+
+}
+
+.post__action>span {
+    margin-left: 10px;
+}
+
+.post__action:hover {
+    background-color: #9BE8D8;
+    border-radius: 5px;
+
+}
+
+.post__commentBox {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #9BE8D8;
+    padding-top: 10px;
+
+
+}
+
+
+.post__commentbox__area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #F5F5F5;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.post__commentbox__area>input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.post__commentbox__area__addimg {
+    font-size: 1.5rem !important;
+    color: gray;
+    margin: 0 10px;
+
+}
+
+.post__commentbox__active {
+    color: blue;
+    animation: sendComment 600ms;
+
+}
+
+@keyframes sendComment {
+    0% {
+        transform: rotate(0deg) scale(1.01);
+    }
+
+
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}

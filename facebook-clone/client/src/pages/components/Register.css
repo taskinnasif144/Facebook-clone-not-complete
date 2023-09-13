@@ -1,0 +1,112 @@
+.register {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.631);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.register__fields {
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.326);
+    padding: 16px;
+    box-shadow: 2px 4px 8px rgba(128, 128, 128, 0.518);
+    width: 400px;
+
+}
+
+.register__fields__intro>div>h2,
+span {
+    margin: 0;
+}
+
+.register__fields__intro>div {
+    margin-bottom: 10px;
+}
+
+.register__fields__intro>button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.register__fields__intro {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.545);
+}
+
+.register__field__input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.register__field__input input {
+    padding: 12px;
+    color: gray;
+    border: 1px solid rgba(128, 128, 128, 0.553);
+    margin: 4px 0;
+    width: 93%;
+    background-color: rgba(128, 128, 128, 0.122);
+}
+
+.inputForName {
+    display: flex;
+}
+
+.register__field__input>.inputForName>input:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+.register__field__input input:focus {
+    color: black;
+}
+
+.register__field__input input:required {
+    outline: 1px solid red;
+}
+
+.register__field__input>.date-input {
+    display: flex;
+}
+
+.register__field__input>.date-input>input:not(:last-child) {
+    margin-right: 10px;
+}
+
+.gender__input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender__input>div {
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 6px 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gender__input>div>label {
+    margin-right: 15px;
+}
+
+.register__form__btn {
+    background-color: #36A420;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}

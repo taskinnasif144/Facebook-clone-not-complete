@@ -1,0 +1,19 @@
+.saved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.noSave {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.saved__container {
+    height: 600px;
+    width: 500px;
+}

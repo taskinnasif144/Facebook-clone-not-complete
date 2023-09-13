@@ -1,0 +1,86 @@
+.changephoto {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    scroll-behavior: none;
+    z-index: 9;
+
+
+}
+
+.changephoto__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 4px 7px 6px gray;
+    transition: all 500ms ease;
+}
+
+.changephoto__input:hover {
+    transform: scale(1.2);
+}
+
+.changephoto__input>span {
+    margin-bottom: 30px;
+    font-size: 28px;
+
+}
+
+.changephoto__input__box {
+    padding: 20px 40px;
+    background-color: #F6F4EB;
+    border-radius: 8px;
+}
+
+.changephoto__input__box>input {
+    width: 500px;
+    font-size: 26px;
+    padding: 10px 20x;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.changephoto__input__box>input:hover {
+    outline: none;
+}
+
+.changephoto__options {
+    margin-top: 20px;
+}
+
+.changephoto__option {
+    background-color: lightgray;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+.changephoto__option:hover {
+    background-color: gray;
+}
+
+.changephoto__option:not(:last-child) {
+    margin-right: 20px;
+}
+
+.changephoto__option_primary {
+    background-color: blue;
+    color: white;
+}
+
+.changephoto__option_primary:hover {
+    background-color: darkorchid;
+}

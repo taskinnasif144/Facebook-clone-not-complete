@@ -1,0 +1,33 @@
+.feed {
+    width: 700px;
+    padding: 20px;
+    height: 100%;
+}
+
+.feed__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+
+
+.loading {
+    font-size: 3rem !important;
+    animation: rotate 1s infinite;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}

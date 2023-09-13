@@ -1,0 +1,30 @@
+.openImage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #331D2C;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+
+.openImage__close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.openImageIcon {
+    color: white;
+    font-size: 3rem !important;
+}
+
+.openImage__image {
+    height: 100vh;
+}
+
+.openImage__image>img {
+    height: 100%;
+}
